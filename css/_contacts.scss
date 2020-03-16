@@ -1,0 +1,332 @@
+.contacts {
+    background-color: #eb5055;
+    color           : $textcolor;
+}
+
+.get-guote__wrap {
+    flex-direction: column;
+}
+
+.form-info {
+    position      : relative;
+    width         : 100%;
+    display       : flex;
+    flex-direction: row;
+    box-sizing    : border-box;
+    margin        : 10px;
+
+    @media (max-width: 992px) {
+        flex-direction: row;
+    }
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    
+    @media (max-width: 480px) {
+        flex-direction: column;
+    
+    }
+    
+    @media (max-width: 320px) {
+        flex-direction: column;
+    }
+}
+
+.form-registration {
+    display       : flex;
+    flex-direction: column;
+    width         : 620px;  //65%;
+    margin-right  : 10px;
+
+    @media (max-width: 992px) { 
+        width         : 100%;
+        padding-right: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        width         : 100%;
+        padding-right: 20px;
+    }
+    
+    @media (max-width: 480px) {
+        width         : 100%;
+        padding-right: 20px;
+    
+    }
+    
+    @media (max-width: 320px) {
+        width         : 100%;
+        padding-right: 20px;
+    }
+
+}
+
+.contactus {
+    max-width: 300px; //32%;
+
+
+    @media (max-width: 992px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+    }
+    
+    @media (max-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    @media (max-width: 480px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    
+    @media (max-width: 320px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.form-info .registration,
+textarea,
+select {
+    background-color: #ca4549;
+    opacity         : 0.8;
+    width           : 100%;
+    height          : 40px;
+    margin-bottom   : 17px;
+    padding         : 4px;
+    border          : none;
+    border-radius   : 5px;
+    color           : $textcolor;
+    box-sizing      : border-box;
+}
+
+.message {
+    height: 112px;
+    resize: none;
+}
+
+option {
+    background-color: #ca4549;
+    color           : $textcolor;
+}
+
+.checkbox-description {
+    margin-bottom: 15px;
+    margin-top   : 10px;
+    font-size    : 18px;
+}
+
+.radiobox-description {
+    margin-top   : 20px;
+    margin-bottom: 20px;
+    font-size    : 18px;
+}
+
+
+
+.registration::-webkit-input-placeholder {
+    color: $textcolor;
+}
+
+.registration::-moz-placeholder {
+    color: $textcolor;
+}
+
+.checkbox-label {
+    font-size: 14px;
+}
+
+
+input[class="checkbox"]:checked,
+input[class="checkbox"]:not(:checked) {
+    position: absolute;
+    left    : -9999px;
+}
+
+input[class="checkbox"]:checked+label,
+input[class="checkbox"]:not(:checked)+label {
+    display       : flex;
+    flex-direction: column;
+    position      : relative;
+    padding-left  : 55px;
+    line-height   : 20px;
+    cursor        : pointer;
+    margin-bottom : 10px;
+}
+
+input[class="checkbox"]:checked+label:before,
+input[class="checkbox"]:not(:checked)+label:before {
+    content         : "";
+    position        : absolute;
+    left            : 20px;
+    top             : 0px;
+    width           : 18px;
+    height          : 18px;
+    border          : 1px solid #dddddd;
+    background-color: #ffffff;
+    margin-bottom   : 10px;
+}
+
+input[class="checkbox"]:checked+label:before,
+input[class="checkbox"]:not(:checked)+label:before {
+
+    background-color: rgba(255, 255, 0, 0);
+
+
+}
+
+input[class="checkbox"]:checked+label:after,
+input[class="checkbox"]:not(:checked)+label:after {
+    content           : "";
+    position          : absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition   : all 0.2s ease;
+    -o-transition     : all 0.2s ease;
+    transition        : all 0.2s ease;
+}
+
+input[class="checkbox"]:checked+label:after,
+input[class="checkbox"]:not(:checked)+label:after {
+    left         : 23px;
+    top          : 4px;
+    width        : 10px;
+    height       : 5px;
+    margin-bottom: 10px;
+
+    border-left      : 3px solid #fff;
+    border-bottom    : 3px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    -o-transform     : rotate(-45deg);
+    -ms-transform    : rotate(-45deg);
+    transform        : rotate(-45deg);
+}
+
+input[class="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+}
+
+input[class="checkbox"]:checked+label:after {
+    opacity: 1;
+}
+
+input[class="checkbox"]:checked+label:before {
+    background-color: #ca4549;
+    border          : 1px solid #fff;
+}
+
+label[type="checkbox"],
+label[type="radio"] {
+    font-size: 14px;
+}
+
+// Radio button
+
+.input-radiobox {
+    display       : flex;
+    flex-direction: column;
+    margin-bottom : 16px;
+}
+
+
+.radiobox {
+    position: absolute;
+    z-index : -1;
+    opacity : 0;
+    margin  : 10px 0 0 7px;
+}
+
+.radiobox+label {
+    position : relative;
+    padding  : 0 0 0 55px;
+    cursor   : pointer;
+    font-size: 14px;
+}
+
+.radiobox+label:before {
+    content      : '';
+    position     : absolute;
+    top          : 4px;
+    left         : 20px;
+    width        : 22px;
+    height       : 22px;
+    border       : 1px solid #fff;
+    border-radius: 50%;
+    //background : #FFF;
+}
+
+.radiobox+label:after {
+    content      : '';
+    position     : absolute;
+    top          : 3.5px;
+    left         : 28px;
+    width        : 10px;
+    height       : 10px;
+    border-radius: 50%;
+    background   : #fff;
+    box-shadow   : inset 0 1px 1px rgba(0, 0, 0, .5);
+    opacity      : 0;
+    transition   : .2s;
+}
+
+.radiobox:checked+label:after {
+    opacity: 1;
+}
+
+.radiobox:focus+label:before {
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .5);
+}
+
+.btn-send {
+    width           : 175px;
+    height          : 40px;
+    background-color: #303441;
+    border          : none;
+    border-radius   : 5px;
+    color           : $textcolor;
+    cursor          : pointer;
+}
+
+.plane {
+    position: absolute;
+    top  : 626px;
+    left    :  4.5%;//40px;
+
+}
+
+.contactus {
+    margin     : 0 10px;
+    font-size  : 12px;
+    line-height: 21px;
+}
+
+.contactus__header {
+    margin-bottom: 17px;
+}
+
+.contactus__description {
+    margin-bottom: 30px;
+}
+
+.adress,
+.phone,
+.mail {
+    display: block;
+    margin : 10px;
+    color  : $textcolor;
+}
+
+.phone:hover,
+.mail:hover {
+    color: #f1f660;
+}
+
+.iconphone,
+.iconmail,
+.iconadress{
+    padding-right: 5px;
+}

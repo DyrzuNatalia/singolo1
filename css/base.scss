@@ -1,0 +1,74 @@
+@import 'var';
+@import 'reset';
+@import 'header';
+@import 'slider';
+@import 'portfolio';
+@import 'services';
+@import 'table';
+@import 'aboutus';
+@import 'contacts';
+@import 'footer';
+
+
+html{
+    font-size  : 18px;   
+}
+
+* {
+    box-sizing: border-box;
+}
+
+Li{
+ text-decoration: none;   
+}
+
+h3{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p{
+  margin-bottom: 20px;  
+}
+
+body {
+    padding    : 0;
+    margin     : 0;
+    font-family: 'Lato', sans-serif;
+    color      : #767e9e;
+    font-size  : 18px;
+    line-height: 30px;
+}
+.conteiner{
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    padding: 50px 10px;
+    box-sizing: border-box;
+
+    @media (max-width: 992px) {
+       // max-width     : 80%;
+    }
+
+    @media (max-width: 768px) {
+       // max-width     : 80%;
+    }
+
+    @media (max-width: 480px) {
+      //  max-width     : 80%;
+
+    }
+
+    @media (max-width: 320px) {
+     //   max-width     : 80%;
+    }
+
+}
+
+.section-header{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+

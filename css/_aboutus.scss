@@ -1,0 +1,159 @@
+.aboutus {
+    background-color: #f2f2f2;
+
+    &__header {
+        padding: 0 10px;
+
+    }
+
+    &__description {
+        padding: 0 10px;
+    }
+}
+
+.aboutus__wrap {
+    flex-direction: column;
+    padding       : 30px 0;
+}
+
+
+.aboutus__members {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+
+
+    @media (max-width: 992px) {
+        flex-wrap     : wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        flex-wrap     : wrap;
+        flex-direction: row;
+    }
+
+    @media (max-width: 480px) {
+        flex-wrap     : wrap;
+        flex-direction: row;
+
+    }
+
+    @media (max-width: 320px) {
+        flex-direction: column;
+        margin        : 0 auto;
+    }
+
+}
+
+.members {
+    display       : flex;
+    flex-direction: column;
+    max-width     : 300px;
+    margin        : 0 10px;
+
+    
+    @media (max-width: 1024px) {
+       justify-content: center;
+
+    }
+    @media (max-width: 992px) {
+        margin    : 30px 10px;
+        text-align: center;
+        
+    }
+
+    @media (max-width: 768px) {
+        max-width     : 270px;
+        margin    : 30px 10px;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        margin    : 30px 10px;
+        text-align: center;
+    }
+
+    @media (max-width: 320px) {
+        margin    : 30px 10px;
+        text-align: center;
+
+    }
+}
+/*.members-info{
+    display: flex;
+    flex-direction: column;
+}
+*/
+.name-about {
+    font-size  : 12px;
+    line-height: 21px;
+}
+
+
+.social__link {
+    display      : block;
+    height       : 30px;
+    width        : 30px;
+    border       : 1px solid #666d89;
+    border-radius: 50%;
+    box-sizing   : border-box;
+    color        : #666d89;
+
+    &--facebook {
+        padding-left: 8px;
+        color       : #666d89;
+
+    }
+
+    &--google {
+        padding-left: 4px;
+        color       : #666d89;
+    }
+
+    &--twitter {
+        padding-left: 6px;
+    }
+
+    &--ln {
+        padding-left: 7px;
+    }
+}
+
+.photo_img {
+    width : 100%; //300px;
+    margin: 0 auto;
+}
+
+.social {
+    display       : flex;
+    flex-direction: row;
+
+    @media (max-width: 992px) {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 480px) {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 320px) {
+        margin: 0 auto;
+
+    }
+
+
+    &__link {
+        margin-right: 10px;
+    }
+}
+
+.social__link:hover {
+    color           : #ffff;
+    background-color: #666d89;
+}
