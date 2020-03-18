@@ -1,0 +1,53 @@
+$maintextcolor : #666d89;
+$textcolor: #fff;
+$activetext: #eb5055;
+
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+    font-family: 'Lato', sans-serif;
+    color      : #767e9e;
+    font-size  : 18px;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    @media (max-width: 992px) {
+      width     : 90%;
+    }
+
+    @media (max-width: 768px) {
+        width     : 90%;
+    }
+
+    @media (max-width: 480px) {
+        width     : 90%;
+
+    }
+
+    @media (max-width: 320px) {
+        width     : 90%;
+    }
+
+}
+
+.section-header{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.section-description{
+    margin-bottom: 53px;
+    line-height  : 30px;
+    font-weight  : 300;
+}

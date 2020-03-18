@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/30262b73bc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../new/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+   <link href="select2/dist/css/select2.min.css" rel="stylesheet" />
+
+    
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
 </head>
@@ -15,23 +19,23 @@
 <body>
 
     <header class="header" id="header">
-        <nav class="nav-bar">
+        <nav class="container nav-bar">
             <div class="logo">
                 <a href="#" class="logo__link">
                     <h1>Singolo</h1>
                 </a>
             </div>
-
+            <a href="#" class="close-panel"><i class="icon-remove-sign icon-large"></i></a>
             <ul class="nav-bar__list">
                 <li class="nav-bar__item"><a href="#" class="nav-bar__link">Home</a></li>
-                <li class="nav-bar__item nav-bar__item--submenu"><a href="#services" class="nav-bar__link">Services</a>
+                <li class="nav-bar__item nav-bar__item--submenu"><div class="nav-bar__link">Services</div>
                     <ul class="submenu">
-                        <li class="submenu__item"><a href="#" class="submenu_link">Custom design</a></li>
-                        <li class="submenu__item"><a href="#" class="submenu_link">Inovated Ideas</a></li>
-                        <li class="submenu__item"><a href="#" class="submenu_link">Love is the answer</a></li>
-                        <li class="submenu__item"><a href="#" class="submenu_link">Responsive Layout</a></li>
-                        <li class="submenu__item"><a href="#" class="submenu_link">24/7 support</a></li>
-                        <li class="submenu__item"><a href="#" class="submenu_link">Feel Like a star</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Custom design</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Inovated Ideas</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Love is the answer</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Responsive Layout</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">24/7 support</a></li>
+                        <li class="submenu__item"><a href="#" class="submenu__link">Feel Like a star</a></li>
                     </ul>
                 </li>
                 <li class="nav-bar__item"><a href="#portfolio" class="nav-bar__link">Portfolio</a></li>
@@ -45,7 +49,7 @@
     </header>
 
     <section class="slider">
-        <div class="slider-wrap">
+        <div class="container slider-wrap">
             <div class="slider_carusel">
                 <div><img src="img/slider1.png" class="img-slider" alt=""></div>
                 <div><img src="img/slider1.png" class="img-slider" alt=""></div>
@@ -55,9 +59,9 @@
     </section>
 
     <section class="services" id="services">
-        <div class="conteiner services__wrap">
+        <div class="container services__wrap">
             <div class="services__info">
-                <h2 class="services__info--header section-header">Our services</h2>
+                <div class="services__info--header section-header">Our services</div>
                 <p class="services__info--description section-description">Fusce dapibus, tellus ac cursus commodo,
                     tortor mauris
                     condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
@@ -72,7 +76,7 @@
                         <img class="service_img" src="img/pen.png" alt="image">
                     </div>
                     <div class="services__offer">
-                        <h2 class="services__offer--header">Custom design</h2>
+                        <div class="services__offer--header">Custom design</div>
                         <p class="services__offer--description">Duis mollis, est non commodo luctus, nisi erat porttitor
                             ligula, eget lacinia odio sem nec elit.</p>
                     </div>
@@ -82,17 +86,19 @@
                         <img class="service_img" src="img/lamp.png" alt="image">
                     </div>
                     <div class="services__offer">
-                        <h2 class="services__offer--header">Inovate ideas</h2>
-                        <p class="services__offer--description">Duis mollis, est non commodo luctus, nisi erat porttitor
+                        <div class="services__offer--header">Inovate ideas</div>
+                        <p class="services__offer--description">Duis mollis, est non commodo luctus, nisi erat
+                            porttitor
                             ligula, eget lacinia odio sem nec elit.</p>
                     </div>
                 </div>
+
                 <div class="service__item">
                     <div class="service__border-img">
                         <img class="service_img" src="img/heart.png" alt="image">
                     </div>
                     <div class="services__offer">
-                        <h2 class="services__offer--header">Love Is The Ansver</h2>
+                        <div class="services__offer--header">Love Is The Ansver</div>
                         <p class="services__offer--description">Duis mollis, est non commodo luctus, nisi erat porttitor
                             ligula, eget lacinia odio sem nec elit.</p>
                     </div>
@@ -102,7 +108,7 @@
                         <img class="service_img" src="img/phone.png." alt="image">
                     </div>
                     <div class="services__offer">
-                        <h2 class="services__offer--header">Responsive layout</h2>
+                        <div class="services__offer--header">Responsive layout</div>
                         <p class="services__offer--description">Duis mollis, est non commodo luctus, nisi erat porttitor
                             ligula, eget lacinia odio sem nec elit.</p>
                     </div>
@@ -112,7 +118,7 @@
                         <img class="service_img" src="img/bubble.png" alt="image">
                     </div>
                     <div class="services__offer">
-                        <h2 class="services__offer--header">24/7 Support</h2>
+                        <div class="services__offer--header">24/7 Support</div>
                         <p class="services__offer--description">Duis mollis, est non commodo luctus, nisi erat porttitor
                             ligula, eget lacinia odio sem nec elit.</p>
                     </div>
@@ -122,7 +128,7 @@
                         <img class="service_img" src="img/star.png" alt="image">
                     </div>
                     <div class="services__offer">
-                        <h2 class="services__offer--header">Feel Like a Star</h2>
+                        <div class="services__offer--header">Feel Like a Star</div>
                         <p class="services__offer--description">Duis mollis, est non commodo luctus, nisi erat porttitor
                             ligula, eget lacinia odio sem nec elit.</p>
                     </div>
@@ -133,32 +139,32 @@
 
 
     <section class="portfolio" id="portfolio">
-        <div class="conteiner portfolio__wrap">
+        <div class="container portfolio__wrap">
             <div class="portfolio__info">
-                <h2 class="portfolio__info--header section-header">Portfolio</h2>
+                <div class="portfolio__info--header section-header">Portfolio</div>
                 <p class="portfolio__info--description section-description">Duis mollis, est non commodo luctus, nisi
                     erat porttitor ligula,
                     eget lacinia odio sem nec elit.</p>
             </div>
 
-            <form class="portfolio__form" name="portfolio" action="#" method="post">
+            <div class="portfolio__input" name="portfolio" action="#" method="post">
                 <label class="portfolio__filter portfolio__filter--all">
                     <input class="work__filter" type="radio" name="filter" data-filter="all" checked>
-                    <span>All</span>
+                    <span class="portfolio__filter-name">All</span>
                 </label>
                 <label class="portfolio__filter portfolio__filter--web">
                     <input class="work__filter" type="radio" name="filter" data-filter="webdesign">
-                    <span>Web design</span>
+                    <span class="portfolio__filter-name">Web design</span>
                 </label>
                 <label class="portfolio__filter portfolio__filter--graphic">
                     <input class="work__filter" type="radio" name="filter" data-filter="graphicdesign">
-                    <span>Graphic design</span>
+                    <span class="portfolio__filter-name">Graphic design</span>
                 </label>
                 <label class="portfolio__filter portfolio__filter--art">
                     <input class="work__filter" type="radio" name="filter" data-filter="art">
-                    <span>Art work</span>
+                    <span class="portfolio__filter-name">Art work</span>
                 </label>
-            </form>
+            </div>
 
             <div class="portfolio__img">
 
@@ -228,57 +234,57 @@
     </section>
 
     <section class="table">
-        <div class="conteiner table-wrap">
-            <h2 class="table__header section-header">Gain and payback</h2>
+        <div class="container table-wrap">
+            <div class="table__header section-header">Gain and payback</div>
 
             <table class="table__body">
                 <tr class="table__row table__row--header">
-                    <td class="table__col-1">Revenue</td>
-                    <td class="table__col-2">3 000 000 $</td>
-                    <td class="table__col-3">100%</td>
+                    <td class="table__col table__col-1 table__col--header">Revenue</td>
+                    <td class="table__col table__col-2 table__col--header">3 000 000 $</td>
+                    <td class="table__col table__col-3 table__col--header">100%
                 </tr>
                 <tr class="table__row">
-                    <td class="table__col-1">Raw materials</td>
-                    <td class="table__col-2">1 200 000 $</td>
-                    <td class="table__col-3">40%</td>
+                    <td class="table__col table__col-1">Raw materials</td>
+                    <td class="table__col table__col-2">1 200 000 $</td>
+                    <td class="table__col table__col-3">40%</td>
                 </tr>
                 <tr class="table__row">
-                    <td class="table__col-1">Rert utilities</td>
-                    <td class="table__col-2">480 000 $</td>
-                    <td class="table__col-3">16%</td>
+                    <td class="table__col table__col-1">Rert utilities</td>
+                    <td class="table__col table__col-2">480 000 $</td>
+                    <td class="table__col table__col-3">16%</td>
                 </tr>
                 <tr class="table__row">
-                    <td class="table__col-1">Personal costs</td>
-                    <td class="table__col-2">420 000 $</td>
-                    <td class="table__col-3">14%</td>
+                    <td class="table__col table__col-1">Personal costs</td>
+                    <td class="table__col table__col-2">420 000 $</td>
+                    <td class="table__col table__col-3">14%</td>
                 </tr>
                 <tr class="table__row">
-                    <td class="table__col-1">Taxes business</td>
-                    <td class="table__col-2">30 000 $</td>
-                    <td class="table__col-3">1%</td>
+                    <td class="table__col table__col-1">Taxes business</td>
+                    <td class="table__col table__col-2">30 000 $</td>
+                    <td class="table__col table__col-3">1%</td>
                 </tr>
                 <tr class="table__row">
-                    <td class="table__col-1">Other expenses</td>
-                    <td class="table__col-2">270 000 $</td>
-                    <td class="table__col-3">9%</td>
+                    <td class="table__col table__col-1">Other expenses</td>
+                    <td class="table__col table__col-2">270 000 $</td>
+                    <td class="table__col table__col-3">9%</td>
                 </tr>
                 <tr class="table__row">
-                    <td class="table__col-1">Royalty</td>
-                    <td class="table__col-2">9 000 $</td>
-                    <td class="table__col-3">3%</td>
+                    <td class="table__col table__col-1">Royalty</td>
+                    <td class="table__col table__col-2">9 000 $</td>
+                    <td class="table__col table__col-3">3%</td>
                 </tr>
                 <tr class="table__row">
-                    <td class="table__col-1">Marketing</td>
-                    <td class="table__col-2">65 000 $</td>
-                    <td class="table__col-3">2%</td>
+                    <td class="table__col table__col-1">Marketing</td>
+                    <td class="table__col table__col-2">65 000 $</td>
+                    <td class="table__col table__col-3">2%</td>
                 </tr>
             </table>
         </div>
     </section>
 
     <section class="aboutus" id="about">
-        <div class="conteiner aboutus__wrap">
-            <h2 class="aboutus__header section-header">About Us</h2>
+        <div class="container aboutus__wrap">
+            <div class="aboutus__header section-header">About Us</div>
             <p class="aboutus__description section-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris
                 condimentum. Duis
                 mollis,
@@ -288,8 +294,8 @@
             <div class="aboutus__members">
 
                 <div class="members ">
-                    <img class="photo_img img_membertwo" src="img/adam.png" alt="image">
-                    <h3 class="name">Adam Jensen</h3>
+                    <img class="photo_img" src="img/adam.png" alt="image">
+                    <div class="name">Adam Jensen</div>
                     <p class="name-about">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
                         nec rutrum tellus dolor id lorem.</p>
                     <div class="social">
@@ -301,8 +307,8 @@
 
                 </div>
                 <div class="members">
-                    <img class="photo_img img_membertwo" src="img/desmond.png" alt="image">
-                    <h3 class="name">Desmond Miles</h3>
+                    <img class="photo_img" src="img/desmond.png" alt="image">
+                    <div class="name">Desmond Miles</div>
                     <p class="name-about">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
                         nec rutrum tellus dolor id lorem.</p>
                     <div class="social">
@@ -314,9 +320,9 @@
                 </div>
 
                 <div class="members">
-                    <img class="photo_img img_membertwo" src="img/scolara.png" alt="image">
+                    <img class="photo_img" src="img/scolara.png" alt="image">
 
-                    <h3 class="name">Scolara Visari</h3>
+                    <div class="name">Scolara Visari</div>
                     <p class="name-about">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
                         nec rutrum tellus dolor id lorem.</p>
                     <div class="social">
@@ -333,8 +339,8 @@
 
     <section class="contacts" id="contact">
 
-        <div class="conteiner get-guote__wrap">
-            <h2 class="aboutus__header section-header">Get a Quote</h2>
+        <div class="container get-guote__wrap">
+            <div class="aboutus__header section-header">Get a Quote</div>
             <p class="aboutus__description section-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris
                 condimentum. Duis
                 mollis,
@@ -342,15 +348,19 @@
                 cursus commodo,
                 tortor mauris condimentum nibh.</p>
             <div class="form-info">
+
                 <form id="form" class="form-registration">
 
                     <input id="name" type="name" class="registration" placeholder="Your Name..." required>
                     <input id="mail" type="mail" class="registration" placeholder="Your Email..." required>
-                    <select class="menu-subject">
+                  
+                    <div class="select-wrap">
+                    <select class="menu-subject js-example-basic-single" name="state">
+                        <option value="Subject">Ukraine</option>
+                        <option value="Subject">Mal</option>
                         <option value="Subject">Subject</option>
-                        <option value="Subject">Subject</option>
-                        <option value="Subject">Subject</option>5
                     </select>
+                </div>
 
                     <p class="checkbox-description">Checkbox</p>
                     <input class="checkbox" type="checkbox" value="Custom design" id="checkbox1" checked><label
@@ -377,7 +387,7 @@
                 </form>
 
                 <div class="contactus">
-                    <h3 class="contactus__header">Contact Information</h3>
+                    <div class="contactus__header">Contact Information</div>
                     <p class="contactus__description">Quisque hendrerit purus dapibus,
                         ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
                         Nulla sed nunc et tortor luctus
@@ -394,7 +404,7 @@
     </section>
 
     <footer class="footer">
-        <div class="conteiner footer-wrap">
+        <div class="container footer-wrap">
             <div class="autor"><a class="autor__link" href="#">© Copyright 2013 · by PSDchat.com</a></div>
             <div class="social social__footer">
                 <a href="#" class="social__link social__link--facebook social__link--footer"><i
@@ -406,14 +416,14 @@
                 <a href="#" class="social__link social__link--ln social__link--footer"><i
                         class="fab fa-linkedin-in"></i></a>
             </div>
-            <a href="#header" class="up"><i class="fas fa-angle-up"></i></a>
         </div>
     </footer>
-
+    <a href="#" class="up"><i class="fas fa-angle-up"></i></a>
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="select2/dist/js/select2.full.min.js"></script>
     <script type="text/javascript" src="https://atuin.ru/demo/ui-slider/jquery-ui.min.js"></script>
     <script src="js/index.js"></script>
 </body>

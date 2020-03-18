@@ -2,18 +2,18 @@
     background-color: #f2f2f2;
 
     &__header {
-        padding: 0 10px;
-
+     margin-bottom: 30px;  
     }
 
     &__description {
-        padding: 0 10px;
+       margin-bottom: 50px;
     }
 }
 
 .aboutus__wrap {
     flex-direction: column;
-    padding       : 30px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 
@@ -51,7 +51,7 @@
     display       : flex;
     flex-direction: column;
     max-width     : 300px;
-    margin        : 0 10px;
+
 
     
     @media (max-width: 1024px) {
@@ -81,14 +81,15 @@
 
     }
 }
-/*.members-info{
-    display: flex;
-    flex-direction: column;
+
+.name{
+    margin-bottom: 15px;
+    font-weight: 700;
 }
-*/
 .name-about {
     font-size  : 12px;
     line-height: 21px;
+    margin-bottom: 30px;
 }
 
 
@@ -96,9 +97,9 @@
     display      : block;
     height       : 30px;
     width        : 30px;
+    padding: 5px;
     border       : 1px solid #666d89;
     border-radius: 50%;
-    box-sizing   : border-box;
     color        : #666d89;
 
     &--facebook {
@@ -124,6 +125,7 @@
 .photo_img {
     width : 100%; //300px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .social {
